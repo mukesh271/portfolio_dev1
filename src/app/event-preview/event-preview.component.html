@@ -1,0 +1,234 @@
+<section class="py-5">
+    <div class="container">
+        <p class="subtitle text-primary">Review</p>
+        <h1 class="h2 mb-5">
+            Rate Your Experience
+        </h1>
+        <form class="form-validate">
+            <div class="row form-block">
+
+                <div class="col-lg-7">
+
+                    <div id="review-experience-details">
+                        <p>How was the Club Member Tasting &amp; Estate Tour at {{detail?.winery_name}}?</p>
+                        <p class="mb-0"><i class="fal fa-calendar-star fa-fw mr-1"></i>{{details?.data?.valid_start_date}} at 10:00
+                            AM</p>
+                        <p><i class="fal fa-check text-success fa-fw mr-1"></i>Checked-in # CTRFBOQE</p>
+                    </div>
+                    <div class="my-4" id="review-ratings">
+                        <h5>Share your experience with other CellarPass guests</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item pl-0">
+                                <h6 class="mb-0">Overall Score* <small>(Select form 1 to 5 stars)</small></h6><small>By
+                                    providing an overall score value, CellarPass allows you to score your total
+                                    experience and share it with other guests.</small>
+                                <div class="my-2" id="rating-stars-overall">
+                                    <ngb-rating aria-valuemin="0"
+                                        class="d-inline-flex ng-untouched ng-pristine ng-invalid"
+                                        formControlname="metric1" [(ngModel)]="ticketReview.rating" role="slider" tabindex="0" aria-valuemax="5"
+                                        aria-valuenow="0" aria-valuetext="0 out of 5"><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span></ngb-rating>
+                                    <div class="form-text small">
+                                        <div class="invalid-error-message ng-star-inserted">Please rate us</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item pl-0">
+                                <h6 class="mb-0">First Impression* <small>(Select form 1 to 5 stars)</small></h6>
+                                <small>What were your first thoughts upon your arrival? Loved it, hated it, or was it
+                                    something inbetween- rate it!</small>
+                                <div class="my-2" id="rating-stars-first-impression">
+                                    <ngb-rating aria-valuemin="0"
+                                        class="d-inline-flex ng-untouched ng-pristine ng-invalid"
+                                        formcontrolname="metric2" role="slider" tabindex="0" aria-valuemax="5"
+                                        aria-valuenow="0" aria-valuetext="0 out of 5"><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span></ngb-rating>
+                                    <div class="form-text small">
+                                        <div class="invalid-error-message ng-star-inserted">Please rate us</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item pl-0">
+                                <h6 class="mb-0">Ambiance* <small>(Select form 1 to 5 stars)</small></h6><small>Did you
+                                    fall in love more and more during your stay, did you dig it? Or did you want to run
+                                    for the hills?</small>
+                                <div class="my-2" id="rating-stars-ambiance">
+                                    <ngb-rating aria-valuemin="0"
+                                        class="d-inline-flex ng-untouched ng-pristine ng-invalid"
+                                        formcontrolname="metric3" role="slider" tabindex="0" aria-valuemax="5"
+                                        aria-valuenow="0" aria-valuetext="0 out of 5"><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span></ngb-rating>
+                                    <div class="form-text small">
+                                        <div class="invalid-error-message ng-star-inserted">Please rate us</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item pl-0">
+                                <h6 class="mb-0">Hospitality* <small>(Select form 1 to 5 stars)</small></h6><small>Were
+                                    you greeted appropriately? Was the service outstanding? Was the host hospitable or
+                                    hostile- rate it!</small>
+                                <div class="my-2" id="rating-stars-hospitality">
+                                    <ngb-rating aria-valuemin="0"
+                                        class="d-inline-flex ng-untouched ng-pristine ng-invalid"
+                                        formcontrolname="metric4" role="slider" tabindex="0" aria-valuemax="5"
+                                        aria-valuenow="0" aria-valuetext="0 out of 5"><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span><span
+                                            class="sr-only ng-star-inserted">( )</span><span class="ng-star-inserted"
+                                            style="cursor: pointer;"><span class="star ng-star-inserted"><i
+                                                    class="fal fa-star fa-lg mr-2 text-gray-300"></i></span></span></ngb-rating>
+                                    <div class="form-text small">
+                                        <div class="invalid-error-message ng-star-inserted">Please rate us</div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item pl-0">
+                                <h6 class="mb-0">I would recommend this to...*</h6><small>When it comes to
+                                    recommendations, everyone has an opinion. Select from the list of who you would
+                                    recommend the experience to.</small>
+                                <div class="mt-2" id="rating-select-recommend"><select class="form-control"
+                                        formcontrolname="recommend" id="recommend">
+                                        <option value="0">Select Answer</option>
+                                        <option value="1">Evil Stepmother- Like the great American classic, I hope this
+                                            place falls on an evil doer and makes the world safe again.</option>
+                                        <option value="2">My Ex- I hope my Ex enjoys taking his or her [[insert
+                                            expletive(s) here]] on their first date.</option>
+                                        <option value="3">My Frenemy- I can't make up my mind if I can fully recommend
+                                            this destination or not</option>
+                                        <option value="4">My Boss- By recommending this to my boss, I know I won't lose
+                                            my job on Monday for a bad recommendation.</option>
+                                        <option value="5">My Parents- It will be the one story that WE WANT to hear
+                                            about during Thanksgiving dinner.!</option>
+                                        <option value="6">My BFF- OMG, I love this place and want all my friends to be
+                                            here with me!</option>
+                                    </select></div>
+                            </li>
+                            <li id="liPurchase" class="list-group-item pl-0 pt-3">
+                                <h6 class="mb-0">Did you make any purchases?</h6>
+                                <div class="mt-2" id="rating-select-recommend">
+                                    <select class="form-control" formcontrolname="recommend" id="recommend">
+                                        <option value="0">Select Answer</option>
+                                        <option value="Yes">Yes</option>
+                                        <option value="No">No</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li id="liSpendAmount" class="list-group-item pl-0 pt-3">
+                                <h6 class="mb-0">How much did you spend?</h6>
+                                <div class="mt-2" id="rating-select-recommend">
+                                    <select class="form-control" formcontrolname="recommend" id="recommend">
+                                        <option value="0">Select Answer</option>
+                                        <option value="1-25">$1 - $25</option>
+                                        <option value="26-75">$26 - $75</option>
+                                        <option value="76-100">$76 - $100</option>
+                                        <option value="101-150">$101 - $150</option>
+                                        <option value="150+">&gt; $150</option>
+                                    </select>
+                                </div>
+                            </li>
+                            <li id="liClubMember" class="list-group-item pl-0 pt-3">
+                                <h6 class="mb-0">Did you sign up for a membership?</h6>
+                                <div class="mt-2" id="rating-select-recommend">
+                                    <select class="form-control" formcontrolname="recommend" id="recommend">
+                                        <option value="0">Select Answer</option>
+                                        <option value="I am already a member">I am already a member</option>
+                                        <option value="No">No</option>
+                                        <option value="No, but planning on it soon">No, but planning on it soon</option>
+                                        <option value="What? I wasn't made aware of your membership program">What? I
+                                            wasn't made aware of your membership program</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-4" id="review-text">
+                        <h5>Brief Description*</h5>
+                        <div class="form-group">
+                            <label for="inputReviewDesc">Write a brief description of your experience with Encore Winery
+                            </label><span class="float-right text-sm text-muted">234 Remaining</span>
+                            <textarea class="form-control p-3" formcontrolname="description" id="description"
+                                maxlength="234" rows="4"></textarea>
+                            <small class="form-text text-muted" id="inputReviewDescHelp">Help other travelers select the
+                                right destination by sharing your own personal experience.</small>
+                        </div>
+                        <h5>Private Messaging</h5>
+                        <div class="form-group"><label for="inputReviewPrivate">Share a private comment regarding your
+                                experience with Encore Winery</label><span class="float-right text-sm text-muted">400
+                                Remaining</span><textarea class="form-control" formcontrolname="privateComment"
+                                id="privateComment" maxlength="400" rows="4"></textarea><small
+                                class="form-text text-muted" id="inputReviewPrivateHelp">Did someone make you feel extra
+                                special or have some comments to improve your next experience? These are sent directly
+                                to the manager and not shared with anyone else.</small></div>
+                    </div>
+                    <div id="review-policy">
+                        <h6>Submission Policy</h6><small>Any information related to the rating of your experience is
+                            done so anonymously. CellarPass reserves the right to delete any reviews that contain
+                            inappropriate or offensive language.</small>
+                    </div>
+
+                    <!-- Submit-->
+                    <div class="my-4">
+                        <button (click)="post()" class="btn btn-lg btn-block btn-primary">Submit Review </button>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 ml-auto">
+
+                </div>
+            </div>
+
+        </form>
+    </div>
+</section>
